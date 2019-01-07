@@ -1,0 +1,148 @@
+<div class="modal-header position-relative">
+    <h4 class="modal-title">Create Profile</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+        <i class="fas fa-times"></i>
+    </a>
+</div>
+<div class="p-4">
+    <form>
+        <div class="form-group row">
+            <label for="name" class="col-sm-5 col-form-label">Name :</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control height35" id="name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="name" class="col-sm-5 col-form-label">Email :</label>
+            <div class="col-sm-7">
+                <input type="email" class="form-control height35" id="name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="name" class="col-sm-5 col-form-label"> Mobile No :</label>
+            <div class="col-sm-7">
+                <input type="number" class="form-control height35" id="name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="source" class="col-sm-5 col-form-label">Source :</label>
+            <div class="col-sm-7">
+                <select class="form-control w-50" required>
+                    <option>naukri</option>
+                    <option>Linked</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="cctc" class="col-sm-5 col-form-label">Shortlisted :</label>
+            <div class="col-sm-7">
+                <label class="radio-inline pr-4">
+                    <input type="radio" name="optradio" class="mr-1" required>Yes
+                </label>
+                <label class="radio-inline pr-4">
+                    <input type="radio" name="optradio" class="mr-1" required>No
+                </label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="year" class="col-sm-5 col-form-label"> Total Experience :</label>
+            <div class="col-sm-7 d-flex align-item-center">
+                <select class="form-control w-25" required>
+                    <option>0 to 1</option>
+                    <option>1 to 2</option>
+                    <option>2 to 3</option>
+                    <option>3 to 4</option>
+                    <option>4 to 5</option>
+                    <option>5 to 6</option>
+                    <option>6 to 7</option>
+                    <option>7 to 8</option>
+                    <option>8 to 9</option>
+                    <option>9 to 10</option>
+                    <option>10 to 11</option>
+                    <option>Above 11</option>
+                </select>
+                <span class="px-2 align-self-end">year</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="ryear" class="col-sm-5 col-form-label">Relevant Experience :</label>
+            <div class="col-sm-7 d-flex align-item-center">
+                <select class="form-control w-25" required>
+                    <option>0 to 1</option>
+                    <option>1 to 2</option>
+                    <option>2 to 3</option>
+                    <option>3 to 4</option>
+                    <option>4 to 5</option>
+                    <option>5 to 6</option>
+                    <option>6 to 7</option>
+                    <option>7 to 8</option>
+                    <option>8 to 9</option>
+                    <option>9 to 10</option>
+                    <option>10 to 11</option>
+                    <option>Above 11</option>
+                </select>
+                <span class="px-2 align-self-end">year</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="cctc" class="col-sm-5 col-form-label">CTC :</label>
+
+            <div class="col-sm-7">
+                <label class="radio-inline pr-4">
+                    <input type="radio" name="optradio" class="mr-1" required>Indian Rupees
+                </label>
+                <label class="radio-inline pr-4">
+                    <input type="radio" name="optradio" class="mr-1" required>US Dollars
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" class="mr-1" required>GBP
+                </label>
+                <div class="d-flex">
+                    <div class="d-flex w-75">
+                        <input class="form-control w-50 px-1 height35 ml-1 number" type="number" id="example-search-input" placeholder="Current"
+                            required>
+                    </div>
+                    <div class="d-flex w-75">
+                        <input class="form-control w-50 px-1 height35 ml-1 number" type="number" id="example-search-input" placeholder="Expected"
+                            required>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="company" class="col-sm-5 col-form-label"> Previous Two Companies :</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control height35" id="company" placeholder="Company 1" required>
+                <input type="text" class="form-control height35 mt-2" id="company" placeholder="Company 2" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="joining" class="col-sm-5 col-form-label">Joining Period :</label>
+            <div class="col-sm-7">
+                <select class="form-control w-50">
+                    <option>Immediate Joining</option>
+                    <option>15 days and less</option>
+                    <option>1 month</option>
+                    <option>2 months</option>
+                    <option>3 months</option>
+                    <option>more than 3 months</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="CV" class="col-sm-5 col-form-label">Upload CV :</label>
+            <div class="col-sm-7">
+                <input type="file" class="form-control" id="CV" required>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary mr-2">Submit</button>
+            <button type="button" class="btn btn-primary" ng-click="$dismiss()">Cancel</button>
+        </div>
+    </form>
+</div>

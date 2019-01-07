@@ -1,0 +1,19 @@
+<div class="modal-header position-relative ">
+    <h4 class="modal-title">Interview Schedule</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+        <i class="fas fa-times"></i>
+    </a>
+</div>
+<div class="p-4 interview-schedule-modal">
+    <form>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Date : </label>
+            <div class="col-8">
+                <input class="form-control height35" type="date" required>
+            </div>
+        </div>
+        <div class="text-center p-2">
+            <button type="button" class="btn btn-primary" ng-click="$dismiss();">save</button>
+        </div>
+    </form>
+</div>

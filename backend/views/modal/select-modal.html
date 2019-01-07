@@ -1,0 +1,31 @@
+<div class="modal-header position-relative">
+    <h4 class="modal-title">Selection Status</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+        <i class="fas fa-times"></i>
+    </a>
+</div>
+<div class="p-4">
+    <form>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Date of Joining : </label>
+            <div class="col-8">
+                <input class="form-control height35" type="date" id="example-date-input" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="ectc" class="col-sm-4 col-form-label">Final CTC :</label>
+            <div class="col-sm-8 d-flex">
+                <div class="d-flex">
+                    <input type="number" class="number w-75" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Interview Feedback:</label>
+            <textarea class="form-control" rows="5" id="feedback" required></textarea>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" ng-click="tabChange('selectionStatus');$dismiss()">Submit</button>
+        </div>
+    </form>
+</div>

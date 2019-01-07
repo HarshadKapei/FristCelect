@@ -1,0 +1,59 @@
+<div class="modal-header position-relative">
+    <h4 class="modal-title">Details</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+        <i class="fas fa-times"></i>
+    </a>
+</div>
+<div class="modal-body">
+    <form>
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-5 col-form-label">Interview Status :</label>
+            <div class="col-sm-7">
+                <select class="form-control" required>
+                    <option selected disabled>Select</option>
+                    <option>Pending</option>
+                    <option>Completed</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="feedback" class="col-sm-5 col-form-label">Interview Feedback :</label>
+            <div class="col-sm-7">
+                <textarea id="textarea" rows="3" required></textarea>
+            </div>
+        </div>
+
+        <div class="form-check pl-1 pb-3">
+            <div>
+                <label for="feedback">Profile Status :</label>
+            </div>
+            <div class="d-inline-block px-4">
+                <input type="checkbox" class="form-check-input" id="Selected" required>
+                <label class="form-check-label" for="Selected">Selected</label>
+            </div>
+            <div class="d-inline-block px-4">
+                <input type="checkbox" class="form-check-input" id="NotSelected" required>
+                <label class="form-check-label" for="NotSelected">Not Selected</label>
+            </div>
+            <div class="d-inline-block px-4">
+                <input type="checkbox" class="form-check-input" id="Pending" required>
+                <label class="form-check-label" for="Pending">Pending</label>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Joining" class="col-sm-5 col-form-label">Date Of Joining :</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control height35" id="name" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="fctc" class="col-sm-5 col-form-label">Final CTC :</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control height35" id="name" required>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer p-4">
+    <button class="btn btn-primary btn-outline btn-small" type="button" ng-click="">Save</button>
+</div>

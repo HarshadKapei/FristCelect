@@ -1,0 +1,65 @@
+{
+  "title": "Brand",
+  "description": "Brand Name",
+  "pageType": "view",
+  "sendIdWithCreate": true,
+  "urlFields": ["_id"],
+
+  "fields": [
+    {
+      "name": "Name",
+      "tableRef": "name"
+    },
+    {
+      "name": "Photo",
+      "tableRef": "photo"
+    },
+    {
+      "name": "Since",
+      "type": "date",
+      "tableRef": "date"
+    },
+    {
+      "name": "Description",
+      "tableRef": "description"
+    }
+  ],
+  "action": [
+    {
+      "name": "edit",
+      "icon": "fa-pencil",
+      "buttonClass": "btn-primary",
+      "type": "page",
+      "action": "editBrand",
+      "fieldsToSend": {
+        "_id": "_id"
+      }
+    },
+    {
+      "name": "delete",
+      "icon": "fa-trash",
+      "buttonClass": "btn-danger",
+      "type": "apiCallConfirm",
+      "title": "Delete Brand",
+      "content": "Are you sure you want to delete Brand?",
+      "api": "Brand/delete",
+      "fieldsToSend": {
+        "name": "_id",
+        "value": "_id"
+      }
+    }
+  ],
+  "button": [
+    {
+      "name": "Create",
+      "icon": "plus",
+      "class": "btn-success",
+      "type": "page",
+      "action": "createBrand"
+    } 
+  ],
+  "apiCall": {
+    "url": "Brand/search",
+    "params": "_id"
+  }
+}

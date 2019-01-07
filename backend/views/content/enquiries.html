@@ -1,0 +1,177 @@
+<div class="d-flex justify-content-end py-2">
+  <form class="search-form mr-form">
+    <input type="text" placeholder="Search Here...">
+    <button type="submit">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+  <a class="btn btn-primary">
+    <i class="fas fa-filter text-white"></i>
+  </a>
+</div>
+
+<h5 class="text-center font-Lato-Bold">Requirement Details
+  <button type="button" class="btn btn-primary my-2 float-right" ng-click="openModal()">Create Enquiry</button>
+</h5>
+<h6>Enquiry Open</h6>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Request Number</th>
+      <th style="text-align:center;">Date</th>
+      <th style="text-align:center;">Customer </th>
+      <th style="text-align:center;">Role </th>
+      <th style="text-align:center;">Salary Range</th>
+      <th style="text-align:center;">Target Date</th>
+      <th style="text-align:center;">Key Skills</th>
+      <th style="text-align:center;">Positions</th>
+      <th style="text-align:center;">Profiles Registered</th>
+      <th style="text-align:center;">Days Open</th>
+      <th style="text-align:center;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" ui-sref="enquiryinside">1819-0001</td>
+      <td align="center" ui-sref="enquiryinside">01-01-2018</td>
+      <td align="center" ui-sref="enquiryinside">TOI/UK</td>
+      <td align="center" ui-sref="enquiryinside">Manager</td>
+      <td align="center" ui-sref="enquiryinside"></td>
+      <td align="center" ui-sref="enquiryinside">16-02-2019</td>
+      <td align="center" ui-sref="enquiryinside">AngularJs</td>
+      <td align="center" ui-sref="enquiryinside">20</td>
+      <td align="center" ui-sref="enquiryinside">300</td>
+      <td align="center" ui-sref="enquiryinside">15</td>
+      <td>
+        <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle1" class=" switch-mini switch-success "></toggle-switch>
+      </td>
+      <td>
+        <a ng-click="moreInfoModal();">
+          <i class="fas fa-info-circle info-font"></i>
+        </a>
+
+      </td>
+    </tr>
+    <tr>
+      <td align="center" ui-sref="enquiryinside">1819-0001</td>
+      <td align="center" ui-sref="enquiryinside">01-01-2018</td>
+      <td align="center" ui-sref="enquiryinside">TOI/UK</td>
+      <td align="center" ui-sref="enquiryinside">Manager</td>
+      <td align="center" ui-sref="enquiryinside"></td>
+      <td align="center" ui-sref="enquiryinside">16-02-2019</td>
+      <td align="center" ui-sref="enquiryinside">AngularJs</td>
+      <td align="center" ui-sref="enquiryinside">20</td>
+      <td align="center" ui-sref="enquiryinside">300</td>
+      <td align="center" ui-sref="enquiryinside">15</td>
+      <td>
+        <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle2" class=" switch-mini switch-success "></toggle-switch>
+      </td>
+      <td>
+        <a ng-click="moreInfoModal();">
+          <i class="fas fa-info-circle info-font"></i>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" ui-sref="enquiryinside">1819-0001</td>
+      <td align="center" ui-sref="enquiryinside">01-01-2018</td>
+      <td align="center" ui-sref="enquiryinside">TOI/UK</td>
+      <td align="center" ui-sref="enquiryinside">Manager</td>
+      <td align="center" ui-sref="enquiryinside"></td>
+      <td align="center" ui-sref="enquiryinside">16-02-2019</td>
+      <td align="center" ui-sref="enquiryinside">AngularJs</td>
+      <td align="center" ui-sref="enquiryinside">20</td>
+      <td align="center" ui-sref="enquiryinside">300</td>
+      <td align="center" ui-sref="enquiryinside">15</td>
+      <td>
+        <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle3" class=" switch-mini switch-success "></toggle-switch>
+      </td>
+      <td>
+        <a ng-click="moreInfoModal();">
+          <i class="fas fa-info-circle info-font"></i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h6>Enquiry Close</h6>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th style="text-align:center;">Request Number</th>
+      <th style="text-align:center;">Date</th>
+      <th style="text-align:center;">Customer </th>
+      <th style="text-align:center;">Role </th>
+      <th style="text-align:center;">Salary Range</th>
+      <th style="text-align:center;">Target Date</th>
+      <th style="text-align:center;">Key Skills</th>
+      <th style="text-align:center;">Positions</th>
+      <th style="text-align:center;">Profiles Registered</th>
+      <th style="text-align:center;">Days Open</th>
+      <th style="text-align:center;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" ui-sref="enquiryinside">1819-0001</td>
+      <td align="center" ui-sref="enquiryinside">01-01-2018</td>
+      <td align="center" ui-sref="enquiryinside">TOI/UK</td>
+      <td align="center" ui-sref="enquiryinside">Manager</td>
+      <td align="center" ui-sref="enquiryinside"></td>
+      <td align="center" ui-sref="enquiryinside">16-02-2019</td>
+      <td align="center" ui-sref="enquiryinside">AngularJs</td>
+      <td align="center" ui-sref="enquiryinside">20</td>
+      <td align="center" ui-sref="enquiryinside">300</td>
+      <td align="center" ui-sref="enquiryinside">15</td>
+      <td>
+        <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle4" class=" switch-mini switch-success "></toggle-switch>
+      </td>
+      <td>
+        <a ng-click="moreInfoModal();">
+          <i class="fas fa-info-circle info-font"></i>
+        </a>
+
+      </td>
+    </tr>
+    <tr>
+      <td align="center" ui-sref="enquiryinside">1819-0001</td>
+      <td align="center" ui-sref="enquiryinside">01-01-2018</td>
+      <td align="center" ui-sref="enquiryinside">TOI/UK</td>
+      <td align="center" ui-sref="enquiryinside">Manager</td>
+      <td align="center" ui-sref="enquiryinside"></td>
+      <td align="center" ui-sref="enquiryinside">16-02-2019</td>
+      <td align="center" ui-sref="enquiryinside">AngularJs</td>
+      <td align="center" ui-sref="enquiryinside">20</td>
+      <td align="center" ui-sref="enquiryinside">300</td>
+      <td align="center" ui-sref="enquiryinside">15</td>
+      <td>
+        <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle5" class=" switch-mini switch-success "></toggle-switch>
+      </td>
+      <td>
+        <a ng-click="moreInfoModal();">
+          <i class="fas fa-info-circle info-font"></i>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" ui-sref="enquiryinside">1819-0001</td>
+      <td align="center" ui-sref="enquiryinside">01-01-2018</td>
+      <td align="center" ui-sref="enquiryinside">TOI/UK</td>
+      <td align="center" ui-sref="enquiryinside">Manager</td>
+      <td align="center" ui-sref="enquiryinside"></td>
+      <td align="center" ui-sref="enquiryinside">16-02-2019</td>
+      <td align="center" ui-sref="enquiryinside">AngularJs</td>
+      <td align="center" ui-sref="enquiryinside">20</td>
+      <td align="center" ui-sref="enquiryinside">300</td>
+      <td align="center" ui-sref="enquiryinside">15</td>
+      <td>
+        <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle6" class=" switch-mini switch-success "></toggle-switch>
+      </td>
+      <td>
+        <a ng-click="moreInfoModal();">
+          <i class="fas fa-info-circle info-font"></i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>

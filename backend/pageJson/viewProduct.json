@@ -1,0 +1,87 @@
+{
+  "title": "Product",
+  "description": "List of Product",
+  "sendIdWithCreate": true,
+  "pageType": "view",
+  "urlFields": ["_id"],
+
+  "fields": [
+    {
+      "name": "Name",
+      "tableRef": "name"
+    },
+    {
+      "name": "Photo",
+      "tableRef": "photo"
+    },
+    {
+      "name": "Manufacturing Date",
+      "type": "date",
+      "tableRef": "date"
+    },
+    {
+      "name": "Description",
+      "tableRef": "description"
+    },
+    {
+      "name": "Stock",
+      "tableRef": "isAvailable"
+    },
+    {
+      "name": "Price",
+      "tableRef": "price"
+    },
+    {
+      "name": "Caterogy",
+      "tableRef": "category"
+    },
+    {
+      "name": "Rating",
+      "tableRef": "rating"
+    },
+    {
+      "name": "Brand Name",
+      "tableRef": "company",
+      "field": "name"
+    }
+  ],
+  "action": [
+    {
+      "name": "edit",
+      "icon": "fa-pencil",
+      "buttonClass": "btn-primary",
+      "type": "page",
+      "action": "editProduct",
+      "fieldsToSend": {
+        "_id": "_id"
+      }
+    },
+    
+    {
+      "name": "delete",
+      "icon": "fa-trash",
+      "buttonClass": "btn-danger",
+      "type": "apiCallConfirm",
+      "title": "Delete Product",
+      "content": "Are you sure you want to delete Product?",
+      "api": "Product/delete",
+      "fieldsToSend": {
+        "name": "_id",
+        "value": "_id"
+      }
+    }
+  ],
+  "button": [
+    {
+      "name": "Create",
+      "icon": "plus",
+      "class": "btn-success",
+      "type": "page",
+      "action": "createProduct"
+    }
+  ],
+  "apiCall": {
+    "url": "Product/search",
+    "params": "_id"
+  }
+}

@@ -1,0 +1,67 @@
+{
+    "title": "Edit Brand",
+    "name": "Brand",
+    "description": "List of Brand",
+    "jsonPage": "viewBrand",
+    "pageType": "edit",
+    "urlFields": ["_id"],
+    "fields":[{
+      "name": "Brand Name",
+      "type": "text",
+      "tableRef": "name",
+      "placeholder": "Enter Brand Name",
+      "id": "name",
+      "validation": ["required", "trim", "unique"]
+    },{
+      "name": "Brand Image",
+      "type": "image",
+      "tableRef": "photo",
+      "size": "250 x 250",
+      "placeholder": "Upload photo",
+      "id": "photo",
+      "validation": "required"
+    },{
+      "name": "Date",
+      "type": "date",
+      "tableRef": "date",
+      "placeholder": "Enter Date",
+      "id": "date",
+      "validation": "require"
+    },{
+        "name": "Description",
+        "type": "textarea",
+        "tableRef": "description",
+        "placeholder": "Enter description",
+        "id": "description",
+        "validation": "require"
+    }],
+    "action": [
+        {
+          "name": "submit",
+          "action": "submitBrand",
+          "stateName": {
+            "page": "page",
+            "json": {
+              "id": "viewBrand"
+            }
+          }
+        },
+        {
+          "name": "Cancel",
+          "sideMenuRedirect": true,
+          "stateName": {
+            "page": "page",
+            "json": {
+              "id": "viewBrand"
+            }
+          }
+        }
+      ],
+      "apiCall": {
+        "url": "Brand/save"
+      },
+      "preApi": {
+        "url": "Brand/getOne",
+        "params": "_id"
+      }
+}

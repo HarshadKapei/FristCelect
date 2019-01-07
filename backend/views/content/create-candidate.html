@@ -1,0 +1,164 @@
+<div class="row">
+    <div class="col">
+        <h5 class="text-left font-Lato-Bold">
+            <button type="button" class="btn btn-primary my-2 " ng-click="candidateModal()">Create Candidate</button>
+        </h5>
+    </div>
+    <div class="col">
+        <div class="d-flex justify-content-end py-2">
+            <form class="search-form mr-form">
+                <input type="text" placeholder="Search Here...">
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+            <a class="btn btn-primary">
+                <i class="fas fa-filter text-white"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<h6 class="py-3"> Pending Checklist</h6>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="text-align:center;">Name : </th>
+            <th style="text-align:center;">Role : </th>
+            <th style="text-align:center;">Reporting to : </th>
+            <th style="text-align:center;">Project : </th>
+            <th style="text-align:center;">HR Owner :</th>
+            <th style="text-align:center;">Last Updated :</th>
+            <th style="text-align:center;">Status :</th>
+            <th style="text-align:center;">Offer Letter Date :</th>
+            <th style="text-align:center;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Aditya</td>
+            <td align="center">Manager</td>
+            <td align="center">Karan</td>
+            <td align="center">Smaaash</td>
+            <td align="center">Manali</td>
+            <td align="center">20/06/2018</td>
+            <td>
+                <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle1" class=" switch-mini switch-success "></toggle-switch>
+            </td>
+            <td align="center">12/08/2018</td>
+            <td>
+                <a ng-click="moreInfoModal();">
+                    <i class="far fa-list-alt" style="font-size: 20px;"></i>
+                </a>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="center">Aditya</td>
+            <td align="center">Manager</td>
+            <td align="center">Karan</td>
+            <td align="center">Smaaash</td>
+            <td align="center">Manali</td>
+            <td align="center">20/06/2018</td>
+            <td>
+                <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle2" class=" switch-mini switch-success "></toggle-switch>
+            </td>
+            <td align="center">12/08/2018</td>
+            <td>
+                <a ng-click="moreInfoModal();">
+                    <i class="far fa-list-alt" style="font-size: 20px;"></i>
+                </a>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="center">Aditya</td>
+            <td align="center">Manager</td>
+            <td align="center">Karan</td>
+            <td align="center">Smaaash</td>
+            <td align="center">Manali</td>
+            <td align="center">20/06/2018</td>
+            <td>
+                <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle3" class=" switch-mini switch-success "></toggle-switch>
+            </td>
+            <td align="center">12/08/2018</td>
+            <td>
+                <a ng-click="moreInfoModal();">
+                    <i class="far fa-list-alt" style="font-size: 20px;"></i>
+                </a>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h6 class="py-3"> Completed Checklist</h6>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="text-align:center;">Name : </th>
+            <th style="text-align:center;">Role : </th>
+            <th style="text-align:center;">Reporting to : </th>
+            <th style="text-align:center;">Project : </th>
+            <th style="text-align:center;">HR Owner :</th>
+            <th style="text-align:center;">Last Updated :</th>
+            <th style="text-align:center;">Status :</th>
+            <th style="text-align:center;">Offer Letter Date :</th>
+            <th style="text-align:center;"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Aditya</td>
+            <td align="center">Manager</td>
+            <td align="center">Karan</td>
+            <td align="center">Smaaash</td>
+            <td align="center">Manali</td>
+            <td align="center">20/06/2018</td>
+            <td>
+                <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle4" class=" switch-mini switch-success "></toggle-switch>
+            </td>
+            <td align="center">12/08/2018</td>
+            <td>
+                <a ng-click="moreInfoModal();">
+                    <i class="far fa-list-alt" style="font-size: 20px;"></i>
+                </a>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="center">Aditya</td>
+            <td align="center">Manager</td>
+            <td align="center">Karan</td>
+            <td align="center">Smaaash</td>
+            <td align="center">Manali</td>
+            <td align="center">20/06/2018</td>
+            <td>
+                <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle5" class=" switch-mini switch-success "></toggle-switch>
+            </td>
+            <td align="center">12/08/2018</td>
+            <td>
+                <a ng-click="moreInfoModal();">
+                    <i class="far fa-list-alt" style="font-size: 20px;"></i>
+                </a>
+
+            </td>
+        </tr>
+        <tr>
+            <td align="center">Aditya</td>
+            <td align="center">Manager</td>
+            <td align="center">Karan</td>
+            <td align="center">Smaaash</td>
+            <td align="center">Manali</td>
+            <td align="center">20/06/2018</td>
+            <td>
+                <toggle-switch on-label="Open" off-label="Close" ng-model="item.toggle6" class=" switch-mini switch-success "></toggle-switch>
+            </td>
+            <td align="center">12/08/2018</td>
+            <td>
+                <a ng-click="moreInfoModal();">
+                    <i class="far fa-list-alt" style="font-size: 20px;"></i>
+                </a>
+
+            </td>
+        </tr>
+    </tbody>
+</table>

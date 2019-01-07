@@ -1,0 +1,60 @@
+<div class="modal-header position-relative">
+    <h4 class="modal-title">Sources</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+            <i class="fas fa-times"></i>
+        </a>
+</div>
+<div class="p-4 sources-modal">
+    <form>
+        <div class="form-group row">
+            <label for="compname" class="col-3 col-form-label">Company Name : </label>
+            <div class="col-9">
+                <input name="compname" class="form-control height35" type="text" placeholder="Enter Company Name" required>
+            </div>
+        </div>
+        <div class="form-group row" ng-repeat="m in Person">
+            <label for="pername" class="col-3 col-form-label">Contact Person : </label>
+            <div class="col-9 d-flex position-relative">
+                <input name="Name" class="form-control mr-1 height35" type="text" placeholder="Enter Name" ng-model="m.Name" required>
+                <input name="Email" class="form-control mr-1 height35" type="email" placeholder="Enter Email" ng-model="m.Email" required>
+                <input name="Contact" class="form-control height35 number" type="number" placeholder="Enter Contact No." ng-model="m.Contact" required>
+                <span ng-click="Add()"><i class="fas fa-plus-circle icon-add"></i></span>
+                <span ng-click="Remove($index)"><i class="fas fa-minus-circle icon-remove"></i></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="skills" class="col-3 col-form-label">Skills : </label>
+            <div class="col-9">
+                <ui-select multiple tagging tagging-label="(custom 'new' label)" ng-model="ctrl.multipleDemo.colors" theme="bootstrap" sortable="true"
+                    ng-disabled="ctrl.disabled" title="Choose a skill">
+                    <ui-select-match placeholder="Select Skills">{{$item}}</ui-select-match>
+                    <ui-select-choices position='up' repeat="color in availableSkills | filter:$select.search">
+                        {{color}}
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+        <div class="text-center"><button type="button" class="btn btn-primary mr-2">Submit</button><button type="button" class="btn btn-primary" ng-click="$dismiss()">Cancel</button></div>
+    </form>
+    <!-- <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th></th>
+            </tr>
+            <tbody ng-repeat="m in Customers">
+                <tr>
+                    <td><input type="text" value="{{m.Name}}" /></td>
+                    <td><input type="text" value="{{m.Country}}" /></td>
+                    <td><input type="button" ng-click="Remove($index)" value="Remove" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="text" ng-model="Name" /></td>
+                    <td><input type="text" ng-model="Country" /></td>
+                    <td><input type="button" ng-click="Add()" value="Add" /></td>
+                </tr>
+            </tfoot>
+        </table> -->
+</div>

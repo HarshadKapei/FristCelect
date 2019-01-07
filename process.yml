@@ -1,0 +1,6 @@
+apps:
+  - script: "app.js"
+    name: "hr-selection - 84"
+    watch: false
+    args: "--prod"
+    exec_mode: "cluster"

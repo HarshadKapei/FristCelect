@@ -1,0 +1,45 @@
+<div class="modal-header position-relative">
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+        <i class="fas fa-times"></i>
+    </a>
+</div>
+<div class="p-3 edit-modal-data">
+    <div class="form-group">
+        <input type="text" placeholder="Enter Title" class="px-3">
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" rows="3" id="comment" placeholder="Add details"></textarea>
+    </div>
+
+    <div class="form-group">
+        <i class="fas fa-bars"></i>
+        <select class="selectpicker show-tick ml-2 p-2">
+            <option>ssssssss</option>
+            <option>My task</option>
+            <option>my task2</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <i class="far fa-calendar-alt"></i>
+        <input type="date" placeholder="Add Date" class="ml-2 px-3">
+    </div>
+    <div class="form-group">
+        <i class="fas fa-tasks"></i>
+        <div class="add-task p-2 mb-2 ml-2">
+            <a class="choose-file d-inline-block">
+                <div class="circle-icon">
+                    <i class="far fa-circle"></i>
+                </div>
+                <div class="check-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+            </a>
+            <div class="d-inline-block bottom-border">
+                <div class="d-inline-block">
+                    <input type="text" style="overflow:hidden;width:205px;" placeholder="Enter Title" class="p-2">
+                </div>
+            </div>
+        </div>
+        <a role="button" class="btn btn-addsubtask">Add Subtasks</a>
+    </div>
+</div>

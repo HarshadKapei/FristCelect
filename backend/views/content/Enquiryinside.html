@@ -1,0 +1,716 @@
+<div class="d-flex justify-content-end py-2">
+    <form class="search-form mr-form">
+        <input type="text" placeholder="Search Here...">
+        <button type="submit">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+    <a class="btn btn-primary">
+        <i class="fas fa-filter text-white"></i>
+    </a>
+</div>
+<div class="enquiry-inside">
+    <div class="row">
+        <div class="col-10">
+            <div class="">
+                <h4>Request Details</h4>
+                <table class="table">
+                    <thead>
+                        <tr class="thead-light">
+                            <th style="text-align:center;">Request Number</th>
+                            <th style="text-align:center;">Date</th>
+                            <th style="text-align:center;">Customer </th>
+                            <th style="text-align:center;">Role </th>
+                            <th style="text-align:center;">Target Date</th>
+                            <th style="text-align:center;">Key Skills</th>
+                            <th style="text-align:center;">Positions</th>
+                            <th style="text-align:center;">Profiles Registered</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">2018-19-001</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">01-01-2018</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">TOI/UK</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">Manager</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">16-02-2019</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">AngularJs</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">450</td>
+                            <td align="center" ui-sref="enquiryinside" href="#!/enquiryinside">300</td>
+                            <td>
+                                <a ng-click="moreInfoModal();">
+                                    <i class="fas fa-info-circle info-font"></i>
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="Add Profile" ng-if="showView=='profile'">
+                <div>
+                    <a role="button" class="btn-primary text-black" ng-click="createprofileModal();">Add profile</a>
+                </div>
+                <table class="table table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="text-align:center;">Sr. No</th>
+                            <th scope="col" style="text-align:center;">Name</th>
+                            <th scope="col" style="text-align:center;">Experience</th>
+                            <th scope="col" style="text-align:center;">Source</th>
+                            <th scope="col" style="text-align:center;">Joining Period</th>
+                            <th scope="col" style="text-align:center;">Current CTC</th>
+                            <th scope="col" style="text-align:center;">Expected CTC</th>
+                            <th scope="col" style="text-align:center;">Shortlist</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="text-align:center;">1</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Mark</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">2 years</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">15 days</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">250000</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">450000</a>
+                            </td>
+                            <td>
+                                <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle1" class=" switch-mini switch-success "></toggle-switch>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align:center;">2</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Mark</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">2 years</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Naukri</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">15 days</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">250000</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">450000</a>
+                            </td>
+                            <td>
+                                <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle2" class=" switch-mini switch-success "></toggle-switch>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align:center;">3</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Mark</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">2 years</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">15 days</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">250000</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">450000</a>
+                            </td>
+                            <td>
+                                <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle3" class=" switch-mini switch-success "></toggle-switch>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align:center;">4</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Mark</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">2 years</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Naukri</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">15 days</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">250000</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">450000</a>
+                            </td>
+                            <td>
+                                <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle4" class=" switch-mini switch-success "></toggle-switch>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align:center;">5</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Mark</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">2 years</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">15 days</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">250000</a>
+                            </td>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">450000</a>
+                            </td>
+                            <td>
+                                <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle5" class=" switch-mini switch-success "></toggle-switch>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="interview-schedule" ng-if="showView=='interviewSchedule'">
+                <a role="button" class="btn-primary my-3" ng-click="openpersonalInteview();">Schedule Interview</a>
+                <div class="row">
+                    <div class="col-4 mb-4">
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
+                        <div class="border-black bg-gray-shade p-1">
+                            <div class="row no-gutters">
+                                <div class="col-5">Name: </div>
+                                <div class="col-7"> XYZ</div>
+                                <div class="col-5">Mode: </div>
+                                <div class="col-7"> Telephonic</div>
+                                <div class="col-5">Time: </div>
+                                <div class="col-7"> 6:30</div>
+                                <div class="col-5">Feedback: </div>
+                                <div class="col-7"> Reference site about Lorem Ipsum, giving information</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
+                        <div class="border-black p-1">
+                            <div class="row no-gutters">
+                                <div class="col-5">Name: </div>
+                                <div class="col-7"> XYZ</div>
+                                <div class="col-5">Mode: </div>
+                                <div class="col-7"> Telephonic</div>
+                                <div class="col-5">Time: </div>
+                                <div class="col-7"> 6:30</div>
+                                <div class="col-5">Feedback:</div>
+                                <div class="col-7"> Reference site about Lorem Ipsum, giving information</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
+                        <div class="border-black p-1">
+                            <div class="row no-gutters">
+                                <div class="col-5">Name: </div>
+                                <div class="col-7"> XYZ</div>
+                                <div class="col-5">Mode: </div>
+                                <div class="col-7"> Telephonic</div>
+                                <div class="col-5">Time: </div>
+                                <div class="col-7"> 6:30</div>
+                                <div class="col-5">Feedback:</div>
+                                <div class="col-7"> Reference site about Lorem Ipsum, giving information</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
+                        <div class="border-black p-1">
+                            <div class="row no-gutters">
+                                <div class="col-5">Name: </div>
+                                <div class="col-7"> XYZ</div>
+                                <div class="col-5">Mode: </div>
+                                <div class="col-7"> Telephonic</div>
+                                <div class="col-5">Time: </div>
+                                <div class="col-7"> 6:30</div>
+                                <div class="col-5">Feedback:</div>
+                                <div class="col-7"> Reference site about Lorem Ipsum, giving information</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
+                        <div class="border-black p-1">
+                            <div class="row no-gutters">
+                                <div class="col-5">Name: </div>
+                                <div class="col-7"> XYZ</div>
+                                <div class="col-5">Mode: </div>
+                                <div class="col-7"> Telephonic</div>
+                                <div class="col-5">Time: </div>
+                                <div class="col-7"> 6:30</div>
+                                <div class="col-5">Feedback:</div>
+                                <div class="col-7"> Reference site about Lorem Ipsum, giving information</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <h6 class="text-center">12
+                            <sup>th</sup> July , 2018</h6>
+                        <div class="border-black p-1">
+                            <div class="row no-gutters">
+                                <div class="col-5">Name: </div>
+                                <div class="col-7"> XYZ</div>
+                                <div class="col-5">Mode: </div>
+                                <div class="col-7"> Telephonic</div>
+                                <div class="col-5">Time: </div>
+                                <div class="col-7"> 6:30</div>
+                                <div class="col-5">Feedback:</div>
+                                <div class="col-7"> Reference site about Lorem Ipsum, giving information</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="interview-result" ng-if="showView=='interviewResult'">
+                <h6 class="text-center">Interview Results</h6>
+                <table class="table table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="text-align:center;">Sr. No</th>
+                            <th scope="col" style="text-align:center;">Profile Name</th>
+                            <th scope="col" style="text-align:center;">Status</th>
+                            <th scope="col" style="text-align:center;">Feedback</th>
+                            <th scope="col" style="text-align:center;">Screenshots</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="text-align:center;">1</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
+                            </td>
+                            <td align="center">Selected</td>
+                            <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
+                            <td align="center">
+                                <a href="" ng-click="openScreen()">View Screenshots</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align:center;">2</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
+                            </td>
+                            <td align="center">Rejected</td>
+                            <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
+                            <td align="center">
+                                <a href="" ng-click="openScreen()">View Screenshots</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align:center;">3</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
+                            </td>
+                            <td align="center">Selected</td>
+                            <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
+                            <td align="center">
+                                <a href="" ng-click="openScreen()">View Screenshots</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align:center;">4</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
+                            </td>
+                            <td align="center">Rejected</td>
+                            <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
+                            <td align="center">
+                                <a href="" ng-click="openScreen()">View Screenshots</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="text-align:center;">5</th>
+                            <td align="center">
+                                <a ng-click="tabChange('detailsview');">Wohlig</a>
+                            </td>
+                            <td align="center">Selected</td>
+                            <td align="center">Lorem Ipsum is simply dummy text of the printing</td>
+                            <td align="center">
+                                <a href="" ng-click="openScreen()">View Screenshots</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="interview-result" ng-if="showView=='checkList'">
+                <h4>Checklist</h4>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="add-task-btn mb-3">
+                            <button class="btn px-2 w-100 text-left">
+                                <i class="fas fa-plus"></i>
+                                <span class="px-3">Add a task</span>
+                            </button>
+                        </div>
+                        <div class="add-task p-2">
+                            <a class="choose-file d-inline-block">
+                                <div class="circle-icon">
+                                    <i class="far fa-circle"></i>
+                                </div>
+                                <div class="check-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </a>
+                            <div class="d-inline-block bottom-border">
+                                <div class="d-inline-block">
+                                    <input type="text">
+                                </div>
+                                <a class="d-inline-block pen-icon" ng-click="editOpen();">
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="add-task p-2">
+                            <a class="choose-file d-inline-block">
+                                <div class="circle-icon">
+                                    <i class="far fa-circle"></i>
+                                </div>
+                                <div class="check-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </a>
+                            <div class="d-inline-block bottom-border">
+                                <div class="d-inline-block">
+                                    <input type="text">
+                                </div>
+                                <a class="d-inline-block pen-icon" ng-click="editOpen();">
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="add-task p-2">
+                            <a class="choose-file d-inline-block">
+                                <div class="circle-icon">
+                                    <i class="far fa-circle"></i>
+                                </div>
+                                <div class="check-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </a>
+                            <div class="d-inline-block bottom-border">
+                                <div class="d-inline-block">
+                                    <input type="text">
+                                </div>
+                                <a class="d-inline-block pen-icon" ng-click="editOpen();">
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="completed-section px-2">
+                            <uib-accordion close-others="oneAtATime">
+                                <div uib-accordion-group class="mt-1" heading="Completed(1)" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled"
+                                    ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}">
+
+                                    <div class="complete-task p-2">
+                                        <a class="choose-file d-inline-block">
+                                            <div class="check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </a>
+                                        <div class="d-inline-block  bottom-border">
+                                            <div class="d-inline-block ">
+                                                <p class="m-0 px-1">deletedelete-icondelete-icondelete</p>
+                                            </div>
+                                            <div class="d-inline-block">
+                                                <i class="fas fa-trash-alt delete-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="complete-task p-2">
+                                        <a class="choose-file d-inline-block">
+                                            <div class="check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </a>
+                                        <div class="d-inline-block  bottom-border">
+                                            <div class="d-inline-block">
+                                                <p class="m-0 px-1">deletedelete-icondelete-icondelete</p>
+                                            </div>
+                                            <div class="d-inline-block">
+                                                <i class="fas fa-trash-alt delete-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="complete-task p-2">
+                                        <a class="choose-file d-inline-block">
+                                            <div class="check-icon">
+                                                <i class="fas fa-check"></i>
+                                            </div>
+                                        </a>
+                                        <div class="d-inline-block  bottom-border">
+                                            <div class="d-inline-block">
+                                                <p class="m-0 px-1">deletedelete-icondelete-icondelete</p>
+                                            </div>
+                                            <div class="d-inline-block">
+                                                <i class="fas fa-trash-alt delete-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </uib-accordion>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detailsview" ng-if="showView=='detailsview' || showView=='selectionStatus' || showView=='rejectedStatus'">
+                <div class="Profile-Information">
+                    <h4 class="pb-2 d-inline-block mr-5">Profile Information</h4>
+                    <h5 class="text-center d-inline-block mb-0 ml-5">Shortlist
+                        <toggle-switch on-label="Yes" off-label="No" ng-model="item.toggle1" class="ml-4 switch-mini switch-success "></toggle-switch>
+                    </h5>
+                    <form class="ng-pristine ng-valid">
+                        <div class="form-group row">
+                            <label for="name" class="col-sm-5 col-form-label">Name :</label>
+                            <div class="col-sm-7 border d-flex align-items-center">
+                                <span>Snehal</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="year" class="col-sm-5 col-form-label">Total Experience :</label>
+                            <div class="col-sm-7 d-flex align-item-center">
+                                1
+                                <span class="px-2">year</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="ryear" class="col-sm-5 col-form-label">Relevant Experience :</label>
+                            <div class="col-sm-7 d-flex align-item-center">
+                                2
+                                <span class="px-2">year</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="cctc" class="col-sm-5 col-form-label">Current CTC :</label>
+                            <div class="col-sm-7 d-flex">
+                                <div class="d-flex">
+                                    1
+                                    <span class="px-2">lakhs</span>
+                                </div>
+                                <div class="d-flex">
+                                    30
+                                    <span class="px-2">Thousands</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="ectc" class="col-sm-5 col-form-label">Expected CTC :</label>
+                            <div class="col-sm-7 d-flex">
+                                <div class="d-flex">
+                                    5
+                                    <span class="px-2">lakhs</span>
+                                </div>
+                                <div class="d-flex">
+                                    20
+                                    <span class="px-2">Thousands</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="company" class="col-sm-5 col-form-label">Company Name :</label>
+                            <div class="col-sm-7 border d-flex align-items-center">
+                                <span>Wohlig Technology</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="joining" class="col-sm-5 col-form-label">Joining Period :</label>
+                            <div class="col-sm-7">
+                                15 days and less
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="source" class="col-sm-5 col-form-label">Source Of Developer :</label>
+                            <div class="col-sm-7 border d-flex align-items-center">
+                                <span>Naukri</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="CV" class="col-sm-5 col-form-label">Uploaded CV :</label>
+                            <div class="col-sm-7 border d-flex align-items-center">
+                                <span>
+                                    <a href="img/About Us.docx" class="text-secondary">sample1.doc</a>
+                                    <a href="https://www.google.com/" class="text-secondary">sample2.doc</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="selection-status" ng-if="showView=='rejectedStatus'">
+                    <form>
+                        <div class="form-group row">
+                            <label for="example-date-input" class="col-sm-5 col-form-label">Status : </label>
+                            <div class="col-sm-7">
+                                Rejected
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-date-input" class="col-sm-5 col-form-label">Interview Feedback : </label>
+                            <div class="col-sm-7">
+                                <span>Lorem Ipsum is simply dummy text of the printingLorem Ipsum is simply dummy text of the printing</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="selection-status" ng-if="showView=='selectionStatus'">
+                    <form>
+                        <div class="form-group row">
+                            <label for="example-date-input" class="col-sm-5 col-form-label">Status : </label>
+                            <div class="col-sm-7 ">
+                                Selected
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-date-input" class="col-sm-5 col-form-label">Date of Joining : </label>
+                            <div class="col-sm-7 ">
+                                12/06/2018
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="ectc" class="col-sm-5 col-form-label">Final CTC :</label>
+                            <div class="col-sm-7 d-flex">
+                                <div class="d-flex">
+                                    1
+                                    <span class="px-2">lakhs</span>
+                                </div>
+                                <div class="d-flex">
+                                    20
+                                    <span class="px-2">Thousands</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-date-input" class="col-sm-5 col-form-label">Interview Feedback : </label>
+                            <div class="col-sm-7 ">
+                                <span>Lorem Ipsum is simply dummy text of the printingLorem Ipsum is simply dummy text of the printing</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="Interview-result pt-3">
+                    <h4 class="pb-2">Interview Result</h4>
+                    <table class="table table-striped ">
+                        <thead>
+                            <tr>
+                                <th style="text-align:center;">Date</th>
+                                <th style="text-align:center;">Time</th>
+                                <th style="text-align:center;">Interview Round </th>
+                                <th style="text-align:center;">Interview Mode</th>
+                                <th style="text-align:center;">Name Of Interviewer</th>
+                                <th style="text-align:center;">Status</th>
+                                <th style="text-align:center;">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center">12/08/2018</td>
+                                <td align="center">12.50 pm</td>
+                                <td align="center">1 </td>
+                                <td align="center">Online Interview</td>
+                                <td align="center">Karan</td>
+                                <td align="center">Shortlisted</td>
+                                <td align="center">3</td>
+
+                                <td>
+                                    <a ng-click="interviewMore();">
+                                        <i class="fas fa-info-circle info-font"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">12/08/2018</td>
+                                <td align="center">12.50 pm</td>
+                                <td align="center">2</td>
+                                <td align="center">Telephonic Interview </td>
+                                <td align="center">Khushaboo</td>
+                                <td align="center">Shortlisted</td>
+                                <td align="center">3</td>
+
+                                <td>
+                                    <a ng-click="interviewMore();">
+                                        <i class="fas fa-info-circle info-font"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">12/08/2018</td>
+                                <td align="center">12.50 pm</td>
+                                <td align="center">3 </td>
+                                <td align="center">Skype Interview</td>
+                                <td align="center">Marks</td>
+                                <td align="center">Rejected</td>
+                                <td align="center">5</td>
+                                <td>
+                                    <a ng-click="interviewMore();">
+                                        <i class="fas fa-info-circle info-font"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row pt-2">
+                    <div class="col">
+                        <a role="button" class="btn-primary text-black mr-2" ng-click="openpersonalInteview();" ng-hide="showView=='rejectedStatus' || showView=='selectionStatus'">Schedule Interview</a>
+                    </div>
+                    <div class="col text-right">
+                        <a role="button" class="btn-primary text-black mr-2" ng-click="openReject();" ng-hide="showView=='rejectedStatus' || showView=='selectionStatus'">Reject</a>
+                        <a role="button" class="btn-primary text-black" ng-click="openSelect();" ng-hide="showView=='rejectedStatus' || showView=='selectionStatus'">Select</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-2">
+            <ul class="list-unstyled">
+                <li>
+                    <a role="button" class="btn enquiry-btn px-2 py-3 mx-1 my-2 text-center bg-pink text-white" ng-click="tabChange('profile');">Profiles</a>
+                </li>
+                <li>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-blue text-white" ng-click="openSettingsModal()">Interview Rounds</a>
+                </li>
+                <li>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-grey text-white" ng-click="tabChange('interviewResult')">Interview Result</a>
+                </li>
+                <li>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-purple text-white" ng-click="tabChange('checkList')">Checklist</a>
+                </li>
+                <li>
+                    <a role="button" class="enquiry-btn btn px-2 py-3 mx-1 my-2 text-center bg-green text-white" ng-click="selectedprofileModal();">Selected Profiles</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+<div class="modal-header position-relative ">
+    <h4 class="modal-title">Interview Done</h4>
+    <a class="close-modal position-absolute" ng-click="$dismiss();">
+        <i class="fas fa-times"></i>
+    </a>
+</div>
+<div class="p-4 interview-schedule-modal">
+    <form>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Date : </label>
+            <div class="col-8">
+                <input class="form-control height35" type="date" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Name : </label>
+            <div class="col-8">
+
+                <input class="form-control height35" type="text" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Time : </label>
+            <div class="col-8">
+                <input class="form-control height35" type="time" required>
+            </div>
+        </div>
+        <div div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Round : </label>
+            <div class="col-8">
+                <select class="form-control" required>
+                    <option value="to1">Round 1</option>
+                    <option value="to1">Round 2</option>
+                    <option value="to1">Round 3</option>
+                    <option value="to2">Round 4</option>
+                    <option value="to3">Round 5</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Interviewer : </label>
+            <div class="col-8">
+                <input class="form-control height35" type="text" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Type : </label>
+            <div class="col-8">
+                <select class="form-control" required>
+                    <option value="to1" disabled selected>Type</option>
+                    <option value="to1">Online Test</option>
+                    <option value="to1">Skype Interview</option>
+                    <option value="to2">Telephonic</option>
+                    <option value="to3">Face to Face</option>
+                    <option value="to4">Client Introduction</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Mode : </label>
+            <div class="col-8">
+                <select class="form-control" required>
+                    <option value="to1" disabled selected>Select Mode</option>
+                    <option value="to1">Online Test</option>
+                    <option value="to1">Skype Interview</option>
+                    <option value="to2">Telephonic</option>
+                    <option value="to3">Face to Face</option>
+                    <option value="to4">Client Introduction</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Shortlisted : </label>
+            <div class="col-8">
+                <div>
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="yes" required> Yes
+                    <input type="checkbox" aria-label="Checkbox for following text input" id="no" required> No
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Feedback : </label>
+            <div class="col-8">
+                <textarea class="form-control" rows="2" id="feedback" required></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-4 col-form-label">Upload Screenshots : </label>
+            <div class="col-8">
+                <div class="form-control">
+                    <input class="height35" type="file" required>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" ng-click="$dismiss()">Save</button>
+        </div>
+
+</div>
+</form>
+</div>

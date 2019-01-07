@@ -1,0 +1,109 @@
+{
+  "title": "Product",
+  "description": "List of Product",
+  "sendIdWithCreate": true,
+  "pageType": "create",
+  "urlFields": ["_id"],
+  "fields": [
+    {
+      "name": "Product Name",
+      "type": "text",
+      "tableRef": "name",
+      "placeholder": "Enter Product Name",
+      "id": "name",
+      "validation": ["required", "trim", "unique"]
+    },
+    {
+      "name": "Product Image",
+      "type": "image",
+      "tableRef": "photo",
+      "size": "250 x 250",
+      "placeholder": "Upload photo",
+      "id": "photo",
+      "validation": "required"
+    },
+    {
+      "name": "Date",
+      "type": "date",
+      "tableRef": "date",
+      "placeholder": "Enter Date",
+      "id": "date",
+      "validation": "required"
+    },
+    {
+      "name": "Description",
+      "type": "textarea",
+      "tableRef": "description",
+      "placeholder": "Enter description",
+      "id": "description",
+      "validation": "require"
+    },
+    {
+      "name": "Stock",
+      "type": "text",
+      "tableRef": "isAvailable",
+      "placeholder": "Enter Availability",
+      "id": "isAvailable",
+      "validation": "required"
+    },
+    {
+      "name": "Price",
+      "type": "number",
+      "tableRef": "price",
+      "placeholder": "Enter Price",
+      "id": "price"
+    },
+    {
+      "name": "Category",
+      "type": "text",
+      "tableRef": "category",
+      "placeholder": "Enter category",
+      "id": "category"
+    },
+    {
+      "name": "Rating",
+      "type": "number",
+      "tableRef": "rating",
+      "placeholder": "Enter Rating",
+      "id": "rating"
+    },
+    {
+      "name": "Company",
+      "type": "tags",
+      "tableRef": "company",
+      "dropDownType": "single",
+      "dropDownField": "name",
+      "searchApi": "searchCall",
+      "placeholder": "Enter Brand Name ",
+      "id": "Brand",
+      "validation": ["", "trim", ""],
+      "url": "Brand/search"
+    }
+  ],
+  "action": [
+    {
+      "name": "submit",
+      "action": "submitBrand",
+      "stateName": {
+        "page": "page",
+        "json": {
+          "id": "viewProduct"
+        }
+      }
+    },
+    {
+      "name": "Cancel",
+      "sideMenuRedirect": true,
+      "stateName": {
+        "page": "page",
+        "json": {
+          "id": "viewProduct"
+        }
+      }
+    }
+  ],
+
+  "apiCall": {
+    "url": "Product/save"
+  }
+}
