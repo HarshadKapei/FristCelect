@@ -4,8 +4,7 @@
   "sendIdWithCreate": true,
   "pageType": "create",
   "urlFields": ["_id"],
-  "fields": [
-    {
+  "fields": [{
       "name": "Product Name",
       "type": "text",
       "tableRef": "name",
@@ -80,8 +79,7 @@
       "url": "Brand/search"
     }
   ],
-  "action": [
-    {
+  "action": [{
       "name": "submit",
       "action": "submitBrand",
       "stateName": {

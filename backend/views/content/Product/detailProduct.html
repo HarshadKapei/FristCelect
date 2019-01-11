@@ -1,0 +1,138 @@
+<div class="breadcrumbs">
+    <ul>
+        <li>
+            <a>Create Table</a>
+        </li>
+    </ul>
+</div>
+
+
+<!-- Top Bar Chart -->
+<div class="panel-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="widget">
+                <div class="form-elements-sec">
+                    <form name="detailForm" role="form" class="sec ng-pristine ng-valid">
+                        <!--<pre>{{data|json}}</pre>-->
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="form-group" fields>
+                                    <label>Product Name*
+                                        <span ng-show="type.required">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" ng-model="formData.name" ng-disabled="{{type.disabled}}" placeholder="Enter Product here">
+                                    <div class="error-msg" ng-show="detailForm[type.tableRef].$invalid && detailForm[type.tableRef].$touched">
+                                        Please enter valid {{type.name}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group" fields>
+                                    <label>Date
+                                        <span ng-show="type.required">*</span>
+                                    </label>
+                                    <input type="date" class="form-control" ng-model="formData.date" ng-disabled="{{type.disabled}}">
+                                    <div class="error-msg" ng-show="detailForm[type.tableRef].$invalid && detailForm[type.tableRef].$touched">
+                                        Please enter valid {{type.name}}
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-group" fields>
+                                    <label>Description
+                                        <span ng-show="type.required">*</span>
+                                    </label>
+                                    <input type="textarea" class="form-control" ng-model="formData.description" ng-disabled="{{type.disabled}}" placeholder="Enter description here">
+                                    <div class="error-msg" ng-show="detailForm[type.tableRef].$invalid && detailForm[type.tableRef].$touched">
+                                        Please enter valid {{type.name}}
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-group" fields>
+                                    <label>Stock
+                                        <span ng-show="type.required">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" ng-model="formData.isAvailable" ng-disabled="{{type.disabled}}" placeholder="Enter availability here">
+                                    <div class="error-msg" ng-show="detailForm[type.tableRef].$invalid && detailForm[type.tableRef].$touched">
+                                        Please enter valid {{type.name}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group" fields>
+                                    <label>Price
+                                        <span ng-show="type.required">*</span>
+                                    </label>
+                                    <input type="number" class="form-control" ng-model="formData.price" ng-disabled="{{type.disabled}}" placeholder="Enter Price">
+                                    <div class="error-msg" ng-show="detailForm[type.tableRef].$invalid && detailForm[type.tableRef].$touched">
+                                        Please enter valid {{type.name}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group" fields>
+                                    <label>Category
+                                        <span ng-show="type.required">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" ng-model="formData.category" ng-disabled="{{type.disabled}}" placeholder="Enter caterogy">
+                                    <div class="error-msg" ng-show="detailForm[type.tableRef].$invalid && detailForm[type.tableRef].$touched">
+                                        Please enter valid {{type.name}}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group" fields>
+                                    <label>Rating
+                                        <span ng-show="type.required">*</span>
+                                    </label>
+                                    <input type="number" class="form-control" ng-model="formData.rating" ng-disabled="{{type.disabled}}" placeholder="Enter availability here">
+                                    <div class="error-msg" ng-show="detailForm[type.tableRef].$invalid && detailForm[type.tableRef].$touched">
+                                        Please enter valid {{type.name}}
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-group" fields>
+                                    <label>Company
+                                        <span ng-show="type.required">*</span>
+                                    </label>
+                                    <ui-select ng-model="formData.company" theme="bootstrap" reset-search-input="false">
+                                        <ui-select-match placeholder="Enter brand name">
+                                            {{$select.selected.name}}
+                                        </ui-select-match>
+                                        <ui-select-choices repeat="item._id as item in items|filter:$select.search">
+                                            {{item.name}}
+                                        </ui-select-choices>
+                                    </ui-select>
+                                    <div class="error-msg" ng-show="detailForm[type.tableRef].$invalid && detailForm[type.tableRef].$touched">
+                                        Please enter valid {{type.name}}
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="text-center mt20 odd-even-button">
+                            <button class="btn btn-default" ng-click="onSave(formData)" ng-disabled="detailForm.$invalid">Save</button>
+                            <button class="btn btn-default" ng-click="onCancel()">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

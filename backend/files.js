@@ -57,4 +57,7 @@ module.exports = [
 
     // Contorllers
     'backend/js/controllers/controller.js',
+    'backend/js/controllers/htmlProductController.js',
+    'backend/js/controllers/htmlBrandController.js'
+
 ];

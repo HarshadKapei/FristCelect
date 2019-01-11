@@ -23,6 +23,44 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
     // for http request with session
     $httpProvider.defaults.withCredentials = true;
     $stateProvider
+        // FOR 
+        .state('view-brand', {
+            url: "/view-brand",
+            templateUrl: "views/template.html",
+            controller: 'BrandCtrl',
+        })
+
+        .state('createBrandTable', {
+            url: "/detail-brand",
+            templateUrl: "views/template.html",
+            controller: 'BrandDetailCtrl',
+        })
+
+        .state('editBrand', {
+            url: "/detail-brand/:id",
+            templateUrl: "views/template.html",
+            controller: 'BrandDetailCtrl',
+        })
+
+
+        //FOR CREATE EDIT
+        .state('editTable', {
+            url: "/edit-product/:id",
+            templateUrl: "views/template.html",
+            controller: 'ProductDetailCtrl',
+        })
+        // FOR CERATE DETAIL
+        .state('createTable', {
+            url: "/detail-product",
+            templateUrl: "views/template.html",
+            controller: 'ProductDetailCtrl',
+        })
+        //FOR CREATE VIEW
+        .state('view-product', {
+            url: "/view-product",
+            templateUrl: "views/template.html",
+            controller: 'ProductCtrl',
+        })
 
         .state('dashboard-main', {
             url: "/dashboard-main",
